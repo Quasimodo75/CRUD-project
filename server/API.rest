@@ -1,0 +1,17 @@
+
+
+###Server Variables###
+@SERVER=http://localhost:5000
+
+### Test Server
+
+GET {{SERVER}}
+
+##Testing###
+
+##User##
+
+
+
+
+

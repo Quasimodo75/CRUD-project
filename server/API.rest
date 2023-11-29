@@ -13,12 +13,26 @@ POST {{SERVER}}/api/register
 content-type: application/json
 
 {
-    "email": "kwazi@ss.com",
-    "password": "123456",
-    "name": "Kwazi "
+    "email": "Edson@s.com",
+    "password": "12345678",
+    "name": "edson "
 }
 
-####Login####
+###LOGIN####
+
+POST {{SERVER}}/api/login
+content-type: application/json
+
+{
+  
+   "password": "12345678",
+    "email": "Edson@s.com"
+  
+}
+
+
+
+
 
 
     

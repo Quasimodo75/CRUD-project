@@ -15,7 +15,7 @@ app.use(express.json())
 
 app.use("/api", require("./routes/user"));
 
-// app.use("/api/users", require("./routes/user"));
+
 
 app.get('/', (req, res) => {
     res.json({ msg: "The Server is working"});

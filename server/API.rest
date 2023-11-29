@@ -9,7 +9,20 @@ GET {{SERVER}}
 
 ##Testing###
 
-##User##
+####Register####
+
+Post {{SERVER}}api/register
+content-type: application/json
+
+{
+    "email": "kwazi@ss.com",
+    "password": "123456",
+    "name": "edson chauke",
+}
+
+
+    
+
 
 
 

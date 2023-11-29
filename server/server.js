@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 7000;
 app.use(express.json())
 
 app.use("/api", require("./routes/user"));
+app.use("/api", require("./routes/crud"))
 
 
 

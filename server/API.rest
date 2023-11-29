@@ -3,7 +3,7 @@
 ###Server Variables###
 @SERVER=http://localhost:7000
 
-### Test Server
+### Test Server###
 
 GET {{SERVER}}
 
@@ -28,6 +28,17 @@ content-type: application/json
    "password": "12345678",
     "email": "Edson@s.com"
   
+}
+
+###Create/add an Item to a to-do-list###
+
+
+POST {{SERVER}}/api/create
+content-type: application/json
+
+{
+     "name": "Ice",
+      "description": "We need Ice for saturday"
 }
 
 

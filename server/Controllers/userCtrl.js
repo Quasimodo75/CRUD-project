@@ -27,6 +27,7 @@ exports.register = async (req, res, next) => {
     }
   }; 
 
+//login///
 
   exports.login = async (req, res, next) => {
     const { email, password } = req.body
@@ -36,9 +37,6 @@ exports.register = async (req, res, next) => {
         message: "email or Password not present",
       })
     }
-
-
-
 
     try {
       const email = await User.findOne({ email : req.body.email })
@@ -61,8 +59,6 @@ exports.register = async (req, res, next) => {
       })
     }
   }
-
-
 
 
 

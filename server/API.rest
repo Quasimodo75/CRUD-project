@@ -61,6 +61,9 @@ content-type: application/json
     "description": "We need butter for lunch box"
 }
 
+###DELETE###
+
+DELETE {{SERVER}}/api/items/65682c1313e27827f0499310
 
 
 

@@ -38,17 +38,17 @@ exports.update = async (req, res) => {
   }
 }
 
-//delete// 
+//delete//
 
-// exports.delete = async (req,res) => {
+exports.remove = async (req,res) => {
 
-//   try{
-//     await Item.findByIdAndDelete(req.params.id);
-//     res.status(204).send();
-//   } catch (error) {
-//     res.status(400).json({ error: error.message });
-//   }
-// }
+  try{
+    await Item.findByIdAndDelete(req.params.id);
+    res.status(204).send();
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+}
   
 
 

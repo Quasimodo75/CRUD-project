@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {create,read,update,  
+const {create,read,update, remove  
 
 
 
@@ -10,10 +10,7 @@ const {create,read,update,
 router.post("/create", create);
 router.get("/items" , read);
 router.put("/items/:id",update);
-
-
-
-
+router.delete("/items/:id", remove)
 
 
 module.exports = router; 

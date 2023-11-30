@@ -16,9 +16,9 @@ POST {{SERVER}}/api/register
 content-type: application/json
 
 {
-    "email": "Edson@s.com",
+    "email": "Mike@s.com",
     "password": "12345678",
-    "name": "edson "
+    "name": "Mike "
 }
 
 ###LOGIN####
@@ -40,8 +40,8 @@ POST {{SERVER}}/api/create
 content-type: application/json
 
 {
-     "name": "Bread",
-      "description": "The childrens lunch box"
+     "name": "Edson chips",
+      "description": "To make chicken stew"
 }
 
 
@@ -52,18 +52,22 @@ GET {{SERVER}}/api/items
 
 ###Update###
 
-PUT {{SERVER}}/api/items/65674352fab157b61b2e8df0
+PUT {{SERVER}}/api/items/65684f0fb63584aea8d900c6
 content-type: application/json
 
 {
 
-    "name": "apple", 
+    "name": "baby milk", 
     "description": "We need butter for lunch box"
 }
 
 ###DELETE###
 
-DELETE {{SERVER}}/api/items/65682c1313e27827f0499310
+DELETE {{SERVER}}/api/items/656850c246eed2a5480f034b
+
+###Search###
+
+
 
 
 

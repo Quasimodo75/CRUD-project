@@ -30,7 +30,7 @@ exports.read = async (req, res) => {
 exports.update = async (req, res) => {
   try { 
     const item = await Item.findByIdAndUpdate(req.params.id, req.body,{
-      new: true,   
+      new: true,    
     });
     res.json(item );
   } catch (error) {

@@ -37,9 +37,14 @@ POST {{SERVER}}/api/create
 content-type: application/json
 
 {
-     "name": "Ice",
-      "description": "We need Ice for saturday"
+     "name": "Bread",
+      "description": "The childrens lunch box"
 }
+
+
+###READ###
+
+GET {{SERVER}}/api/items
 
 
 

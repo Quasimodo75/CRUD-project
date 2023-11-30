@@ -3,6 +3,9 @@
 ###Server Variables###
 @SERVER=http://localhost:7000
 
+
+@ID=65674352fab157b61b2e8df0
+
 ### Test Server###
 
 GET {{SERVER}}
@@ -45,6 +48,18 @@ content-type: application/json
 ###READ###
 
 GET {{SERVER}}/api/items
+
+
+###Update###
+
+PUT {{SERVER}}/api/items/65674352fab157b61b2e8df0
+content-type: application/json
+
+{
+
+    "name": "apple", 
+    "description": "We need butter for lunch box"
+}
 
 
 

@@ -21,7 +21,11 @@
               <label for="password">Password:</label>
               <input type="password" class="form-control" id="password"formControlName="password"    name="password" required>
             </div>
-            <button type="submit" (click)="register()"   class="btn btn-primary">Register</button>
+            <br>
+            <button type="submit" (click)="register()" class="btn btn-primary">Register</button>
+          <li>
+            <a routerLink="/login" routerLinkActive="active">Already registered?</a>
+          </li>
           </form>
         </div>
       </div>

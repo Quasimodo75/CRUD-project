@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Route } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +9,8 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  constructor(private userService: UserService) {}
+  router: any;
+  constructor(private userService: UserService,  ) {}
 
   form: FormGroup = new FormGroup({
     name: new FormControl(''),
@@ -16,12 +18,14 @@ export class RegisterComponent implements OnInit {
     email: new FormControl(''),
   });
   ngOnInit() {
-    this.register();
+    
   }
 
   register() {
     this.userService.register(this.form.value).subscribe((data) => {
       console.log(data);
+
+      this.router.navigate(['/login']);
     });
   }
 }

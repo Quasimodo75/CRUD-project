@@ -39,7 +39,7 @@ exports.register = async (req, res, next) => {
     }
 
     try {
-      const email = await User.findOne({ email : req.body.email })
+      const email = await User.findOne({ email : req.body.email, password: req.body.password })
       if (!email) {
         res.status(401).json({
 

@@ -1,7 +1,7 @@
 <app-nav></app-nav>
 
 
-<div class="container-flud mt-5" [formGroup]="form">
+<div class="container-flud mt-6" [formGroup]="form">
   <div class="container" >
 
 
@@ -43,7 +43,7 @@
           <div class="btn-group d-grid gap-4 d-md-flex">
 
             <button class="btn btn-primary" type="button">Edit</button>
-            <button class="btn btn-danger" type="button">Delete</button>
+            <button class="btn btn-danger"  (click)="delete(item?._id)"  type="button">Delete</button>
           </div>
 
 

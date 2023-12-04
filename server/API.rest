@@ -16,7 +16,7 @@ POST {{SERVER}}/api/register
 content-type: application/json
 
 {
-    "email": "Mike@s.com",
+    "email": "Mik@s.com",
     "password": "12345678",
     "name": "Mike "
 }
@@ -57,13 +57,13 @@ content-type: application/json
 
 {
 
-    "name": "baby ", 
-    "description": "We need butter for lunch box"
+    "name": "Deempho Mo", 
+    "description": "Corana extra 6pack, Ice tropez "
 }
 
 ###DELETE###
 
-DELETE {{SERVER}}/api/items/656850c246eed2a5480f034b
+DELETE {{SERVER}}/api/items/656dcd9a406958098098b61d
 
 ###Search###
 

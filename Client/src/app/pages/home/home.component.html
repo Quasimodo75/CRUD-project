@@ -1,14 +1,36 @@
 <app-nav></app-nav>
 
 
+<div class="container-flud mt-5" [formGroup]="form">
+  <div class="container" >
+
+
+      <!-- form starts here -->
+      <div class="row mt -4" >
+          <input type="text" class="form-control" placeholder="enter" aria-describedby="button-addon2"
+              formControlName="name">
+
+          <input type="text" class="form-control" placeholder="enter" aria-describedby="button-addon2"
+              formControlName="description">
+          <button class="btn btn-outline-sucesss" type="button"class="btn btn-primary"(click)="create()">Add</button>
+
+
+
+      </div>
+
+  </div>
+
 <table class="table mt-4">
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Email</th>
-        <th scope="col">Role</th>
+        <th scope="col">Items</th>
+        <th scope="col">Description</th>
+    
         <th scope="col">Action</th>
+        
+
+
         <div class="Action"></div>
       </tr>
     </thead>
@@ -17,8 +39,15 @@
         <th scope="row">{{ i + 1 }}</th>
         <td>{{ item.name }}</td>
         <td>{{ item.description }}</td>
-     
         <td>
+          <div class="btn-group d-grid gap-4 d-md-flex">
+
+            <button class="btn btn-primary" type="button">Edit</button>
+            <button class="btn btn-danger" type="button">Delete</button>
+          </div>
+
+
+
 
 
 

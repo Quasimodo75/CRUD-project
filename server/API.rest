@@ -40,7 +40,7 @@ POST {{SERVER}}/api/create
 content-type: application/json
 
 {
-     "name": "Edson chips",
+     "name": "chicken",
       "description": "To make chicken stew"
 }
 
@@ -67,7 +67,12 @@ DELETE {{SERVER}}/api/items/656dcd9a406958098098b61d
 
 ###Search###
 
+GET {{SERVER}}/api/search/
+content-type: application/json
 
+{
+    "name": "chicken", 
+}
 
 
 

@@ -16,7 +16,7 @@ app.use(express.json())
 
 app.use("/api", require("./routes/user"));
 app.use("/api", require("./routes/crud"))
-
+app.use("/api", require("./routes/searchItem"));
 
 
 app.get('/', (req, res) => {

@@ -11,11 +11,9 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class HomeComponent {
   items: Items[] = [];
 
-
-
   form = new FormGroup({
-    name: new FormControl(''),
-    description: new FormControl(''),
+  name: new FormControl(''),
+  description: new FormControl(''),
   });
 
   constructor(private crudService: CrudService) {}
@@ -40,12 +38,17 @@ export class HomeComponent {
     });
   }
 
+  delete(id: any) {
+    this.crudService.remove(id).subscribe((res: any) => {
+      window.location.reload();
+    });
+  }
+  update(id: any) {
+    // this.crudService.update(id).subscribe((res:any) => {
+    //  window.location.reload();
+    // }  )
+  }
+ 
 
-  delete(id:any){
 
-    this.crudService.remove(id).subscribe((res:any) => {
-    window.location.reload();
-
-   })
- }
 }

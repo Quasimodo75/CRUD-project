@@ -81,7 +81,7 @@
         <td>{{ item.description }}</td>
         <td>
           <div class="btn-group d-grid gap-4 d-md-flex">
-            <button class="btn btn-primary" type="button">Edit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
             <button
               class="btn btn-danger"
               (click)="delete(item?._id)"
@@ -89,6 +89,10 @@
             >
               Delete
             </button>
+
+           <!-- Button trigger modal -->
+          <!-- Modal -->
+         
           </div>
         </td>
       </tr>
